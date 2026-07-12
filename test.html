@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THẺ TRONG HTML</title>
+</head>
+    <body>
+        <h1>1. HTML là gì?</h1>
+    
+     <p>HTML (HyperText Markup Language) không phải là ngôn ngữ lập trình, mà là ngôn ngữ đánh dấu dùng để mô tả cấu trúc của một trang web. <br> Trình duyệt (Chrome, Firefox...) đọc file HTML và hiển thị thành giao diện mà bạn thấy.
+        <hr> -- phân cách dòng
+<br> Ba trụ cột của một trang web:
+<br> HTML → cấu trúc / nội dung (bộ khung)
+<br> CSS → giao diện / trang trí (màu sắc, bố cục)
+JavaScript → hành vi / tương tác (xử lý logic)</p>
+        
+        <p>HTML gồm các thẻ (tag), thường đi theo cặp: thẻ mở <tag> và thẻ đóng </tag>. Nội dung nằm giữa hai thẻ đó gọi là phần tử (element).</p>
+       <h1>2. Cấu trúc của HTML</h1>
+       <h2>2.1 Cấu trúc cơ bản</h2>
+      
+<h1>3.Các thẻ html cơ bản</h1>
+<h2>3.1 Tiêu đề</h2>
+<p><h1>Tiêu đề lớn nhất</h1>
+<h2>Tiêu đề cấp 2</h2>
+<h3>Tiêu đề cấp 3</h3>
+<!-- ... đến h6 nhỏ nhất -->
+Có 6 cấp: h1 → h6, h1 quan trọng nhất (thường chỉ dùng 1 lần/trang, tốt cho SEO).</p>
+<h2>Đoạn văn và xuống dòng</h2>
+<p><p>Đây là một đoạn văn bản.</p>
+<br> <!-- xuống dòng, không có thẻ đóng -->
+<hr> <!-- vẽ một đường kẻ ngang phân cách --></p>
+<h2>Định dạng chữ</h2>
+<p><b>In đậm (chỉ về mặt hiển thị)</b>
+<br> <strong>In đậm (mang ý nghĩa quan trọng)</strong>
+<br><i>In nghiêng (chỉ về mặt hiển thị)</i>
+<br> <em>In nghiêng (nhấn mạnh về ngữ nghĩa)</em>
+<br> <u>Gạch chân</u>
+<br> <s>Gạch ngang (nội dung không còn đúng)</s>
+<br> <mark>Đánh dấu highlight (như bút dạ quang)</mark>
+<<br> small>Chữ nhỏ</small>
+<br> <sub>Chỉ số dưới</sub> ví dụ: H<sub>2</sub>O
+<br> <sup>Chỉ số trên</sup> ví dụ: x<sup>2</sup></p>
+<br> <p>Mẹo: <strong> và <em> được ưu tiên hơn <b>, <i> vì mang ý nghĩa ngữ nghĩa rõ ràng, tốt cho SEO và trình đọc màn hình (screen reader).</p>
+<h2>Xuống dòng giữ nguyên định dạng</h2>
+<p><pre>
+  Dòng này giữ nguyên
+    khoảng trắng    và
+  xuống dòng như trong code.
+</pre>
+<code>console.log("Hello");</code></p>
+<h1>4.Liên kết và hình ảnh</h1>
+<h2>4.1 Liên kết</h2>
+<p><a href="https://example.com">Nhấn vào đây</a>
+<br> <a href="https://example.com" target="_blank">Mở tab mới</a>
+<br> <a href="mailto:abc@gmail.com">Gửi email</a>
+<br><a href="#section1">Nhảy tới phần trong trang</a></p>
+<p>href: đường dẫn cần đến
+target="_blank": mở liên kết ở tab mới</p>
+<h2>4.2 Hình ảnh</h2>
+<p><img src="hinh.jpg" alt="Mô tả hình ảnh" width="300" height="200"></p>
+<p>src: đường dẫn ảnh
+<br> alt: văn bản thay thế khi ảnh lỗi/không tải được, cũng giúp SEO và người khiếm thị
+<br> width, height: kích thước hiển thị</p>
+<h1>Danh sách</h1>
+<h2>4.1 Danh sách không thứ tự</h2>
+<p><ol>
+  <li>Mục 1</li>
+  <li>Mục 2</li>
+  <li>Mục 3</li></ol></p>
+<h2>4.2 Danh sách có thứ tự</h2>
+<p><ol>
+  <li>Bước 1</li>
+  <li>Bước 2</li>
+</ol></p>
+<h2>4.3 Danh sách định nghĩa</h2>
+<p><dl>
+  <dt>HTML</dt>
+  <dd>Ngôn ngữ đánh dấu siêu văn bản</dd>
+</dl></p>
+<h1>5. Bảng</h1>
+<p> <table>	Bao ngoài toàn bộ bảng
+<br> <thead>	Phần tiêu đề bảng
+<br> <tbody>	Phần thân bảng
+<br> <tr>	Một hàng trong bảng
+<br> <th>	Ô tiêu đề (thường in đậm, căn giữa)
+<br> <td>	Ô dữ liệu (căn trái mặc định)</p>
+<h1>6. Form</h1>
+<p><form action="/submit" method="post">
+  <label for="name">Tên:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <input type="submit" value="Gửi">
+  <br> <input type="password">	Ô nhập mật khẩu (ẩn ký tự)
+  <br> <input type="radio">	Chọn 1 trong nhiều lựa chọn
+  <br> <input type="checkbox">	Chọn nhiều lựa chọn
+  <br> <input type="file">	Chọn file để upload
+  <br> <input type="hidden">	Ẩn, không hiển thị, nhưng gửi dữ liệu đi
+  <br> <input type="reset">	Nút reset form
+  <br> <input type="button">	Nút bấm, cần JS để xử lý
+  <br> <textarea>	Ô nhập văn bản nhiều dòng
+  <br> <select>	Ô chọn từ danh sách thả xuống
+    <br> <option>	Một lựa chọn trong select
+  <br> 
+</form></p>
+<h1>7. Thẻ semantic </h1>
+<p> <header>	Phần đầu trang (logo, menu, tiêu đề)
+<br> <nav>	Thanh điều hướng (menu)
+<br> <main>	Phần nội dung chính
+<br> <article>	Một bài viết, một mục nội dung độc lập
+<br> <section>	Một phần nội dung trong trang
+<br> <aside>	Phần nội dung phụ (sidebar, quảng cáo)
+<br> <footer>	Phần chân trang (bản quyền, liên hệ)</p>
+<h1>8. Thẻ div và span</h1>
+<p><div>	Thẻ khối, dùng để nhóm các phần tử lại với nhau
+<br> <span>	Thẻ nội tuyến, dùng để nhóm các phần tử nhỏ trong
+<h1>Thẻ media</h1>
+<p> <audio controls>	Chèn âm thanh, có nút play/pause
+<br> <video controls width="640">	Chèn video, có nút play/pause, có thể đặt width/height
+<br> <source src="video.mp4" type="video/mp4">	Đường dẫn video, định dạng mp4
+<br> <iframe src="https://www.youtube.com/embed/VIDEO_ID" width="560" height="315">	Chèn video từ YouTube, có thể đặt width/height</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style//style.css">
+    <link rel="favicon" href="./images/hoanghon.webp" type="image/x-icon">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="khoi-1">
+        <p style="color: rgb(3, 170, 11);">abc</p>
+    </div>
+</body>
+</html>
+<!-- inline -->
+ <!-- internal -->
+  <!-- external -->
+Bai tap lam UI một quán cafe
+bao gồm
+tên quán
+ảnh banner quán
+danh sách các loại đồ uống
+giá
+số lượng
+button đặt mon
+chọn bàn
+nhúng link video một quán cafe nào đó trên youtube
+nhúng link google map vị trí quán cafe
+đẩy toàn bộ trang web lên github và gửi cho anh
